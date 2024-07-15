@@ -7,8 +7,8 @@
     <ProjectGuid>{FBFF3A20-A1C8-40EE-B998-7998DBB285A4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FFXIV_Log_Splitter</RootNamespace>
-    <AssemblyName>FFXIV_Log_Splitter</AssemblyName>
+    <RootNamespace>ACT_FFXIV_LogSplitter</RootNamespace>
+    <AssemblyName>ACT_FFXIV_LogSplitter</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -17,7 +17,8 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>Output\Bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Output\Obj\</IntermediateOutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -25,21 +26,27 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>Output\Bin\Release\</OutputPath>
+    <IntermediateOutputPath>Output\Obj\</IntermediateOutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Advanced Combat Tracker">
-      <HintPath>external\Advanced Combat Tracker.exe</HintPath>
+      <HintPath>Libraries\ACT\Advanced Combat Tracker.exe</HintPath>
+      <Private>false</Private>
+      <ExcludeAssets>all</ExcludeAssets>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data" />
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FFXIV_Log_Splitter.cs" />
+    <Compile Include="LogSplitterPlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

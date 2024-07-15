@@ -1,17 +1,18 @@
-# ACT FFXIV Log Splitter Plugin
+# ACT FFXIV Log Splitter
+- Automatically split encounters to log files per zone, in real-time.
+- Remove zones without encounters when changing to a new zone.
 
-This plugin will automatically split FFXIV logs into `Zone_<DateTime>_<ZoneName>.log` files, in the same folder as normal FFXIV logs.
+## Download
+Download the latest DLL from the [Releases page](https://github.com/grievouz/FFXIVLogSplitter/releases) and load it as an ACT plugin.
 
-Just download the latest release DLL and load it as an ACT plugin.
+## Example
 
-Features:
-- Automatically split encounters to log files per zone, the same way the FFLogs uploader does, but in real-time
-- If a zone doesn't have an encounter, it will be removed when changing to a new zone. For example:
-  - In E9S -> creates zone file for E9S
-  - Clear fight
-  - Zone out to Eulmore -> creates zone file for Eulmore
-  - Zone in to E10S -> creates zone file for E10S, removes zone file for Eulmore since no encounters happened
+![image](./Docs/Example.png)
 
-Example of zone files created:
+## Contributing
 
-![image](https://user-images.githubusercontent.com/6119598/122481763-4c309700-cf9d-11eb-86e8-b5f3490ca3a8.png)
+Contributions to `ACT_FFXIV_LogSplitter` are welcome! Please open an issue or submit a pull request on the GitHub repository.
+
+## License
+
+`ACT_FFXIV_LogSplitter` is released under the [MIT License](./LICENSE.md).

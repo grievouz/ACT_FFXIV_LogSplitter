@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29001.49
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFXIV_Log_Splitter", "FFXIV_Log_Splitter\FFXIV_Log_Splitter.csproj", "{FBFF3A20-A1C8-40EE-B998-7998DBB285A4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACT_FFXIV_LogSplitter", "ACT_FFXIV_LogSplitter\ACT_FFXIV_LogSplitter.csproj", "{FBFF3A20-A1C8-40EE-B998-7998DBB285A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
