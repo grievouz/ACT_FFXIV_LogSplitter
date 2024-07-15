@@ -1,4 +1,8 @@
+> [!NOTE]  
+> This project is a fork of [ACT_FFXIV_Log_Splitter_Plugin](https://github.com/valarnin/ACT_FFXIV_Log_Splitter_Plugin)
+
 # ACT FFXIV Log Splitter
+
 - Automatically split encounters to log files per zone, in real-time.
 - Remove zones without encounters when changing to a new zone.
 
